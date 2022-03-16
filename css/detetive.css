@@ -1,0 +1,43 @@
+#Detetive01 {
+    background-color: #540000;
+    color: white;
+    display: flex;
+    font-family: serif;
+}
+
+#Detetive01 img {
+    border: solid 2px black;
+    width: 20.7em;
+}
+
+#Detetive01 div {
+    margin-left: 10em;
+    width: 50%;
+    font-size: 1.2em;
+    color: black;
+    padding: 10px;
+}
+
+#Detetive02 {
+    background-color: #05040A;
+    color: white;
+    display: flex;
+    font-family: serif;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+#Detetive02 img {
+    
+    border: solid 2px black;
+    width: 30em;
+}
+
+#Detetive02 div {
+    width: 30%;
+    font-size: 1.2em;
+    color: #540000;
+    margin-left: 10em;
+    padding: 10px;
+}
+

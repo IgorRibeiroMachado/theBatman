@@ -1,0 +1,20 @@
+#theBatmanBegin {
+    width: 100%;
+}
+
+#theBatmanBegin {
+    animation-duration: 10s;
+    animation-name: batman;
+}
+
+@keyframes batman {
+    from {
+        margin-right: 100%;
+        width: 150%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}

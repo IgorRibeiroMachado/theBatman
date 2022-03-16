@@ -1,0 +1,80 @@
+@font-face {
+    font-family: batman;
+    src: url('/font/Fiorello_CG_Condensed_Regular.otf');
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: batman;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    margin: 0;
+    border-bottom: solid 2px #50050A;
+}
+
+header #logoTheBatman img {
+    margin: 0.8em;
+}
+
+header nav a {
+    color: #B40516;
+    color: #D1051A;
+    font-size: 1.8em;
+    text-decoration: none;
+    margin: 2em;
+}
+
+header nav a:hover {
+    color: green;
+}
+
+header #enigma {
+    margin-right: 0.8em;
+}
+
+section {
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #480F0E;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #480F0E;
+}
+
+footer {
+    background-color: black;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #B62220;
+}
+
+footer img {
+    margin-left: 10px;
+    margin-left: 0.5em;
+}
+
+footer p:hover{
+    cursor: default;
+}
+
