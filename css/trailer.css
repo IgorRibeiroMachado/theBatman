@@ -1,0 +1,55 @@
+#trailers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px #480F0E;
+}
+
+#trailer01 p {
+    color: #750303;
+    font-size: 2em;
+    border-bottom: 0.1em solid #750303;
+    border-radius: 10%;
+}
+
+#trailer01 iframe {
+    width: 50em;
+    height: 30em;
+    border: none;
+}
+
+#trailer02 p {
+    color: #750303;
+    font-size: 2em;
+    border-bottom: 0.1em solid #750303;
+    border-radius: 10%;
+}
+
+#trailer02 iframe {
+    width: 50em;
+    height: 30em;
+    border: none;
+}
+
+#trailer03 p {
+    color: #750303;
+    font-size: 2em;
+    border-bottom: 0.1em solid #750303;
+    border-radius: 10%;
+}
+
+#trailer03 iframe {
+    width: 50em;
+    height: 30em;
+    border: none;
+}
+
+#trailer01, #trailer02, #trailer03 {
+    border: solid 1px #480F0E;
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

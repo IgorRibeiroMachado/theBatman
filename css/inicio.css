@@ -1,5 +1,10 @@
 #theBatmanBegin {
-    width: 100%;
+    width: 80em;
+    height: 40em;
+}
+
+#theBatmanBegin{
+    opacity: 0.6;
 }
 
 #theBatmanBegin {
@@ -10,11 +15,11 @@
 @keyframes batman {
     from {
         margin-right: 100%;
-        width: 150%;
+        width: 150em;
     }
 
     to {
         margin-right: 0%;
-        width: 100%;
+        width: 90em;
     }
 }

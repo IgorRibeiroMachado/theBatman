@@ -2,42 +2,43 @@
     background-color: #540000;
     color: white;
     display: flex;
-    font-family: serif;
+    font-family: cursive;
 }
 
 #Detetive01 img {
-    border: solid 2px black;
-    width: 20.7em;
+    width: 21em;
+    border-right: solid 2px black;
 }
 
 #Detetive01 div {
-    margin-left: 10em;
-    width: 50%;
+    width: 55%;
     font-size: 1.2em;
     color: black;
     padding: 10px;
+    margin: 0 auto;
 }
 
 #Detetive02 {
-    background-color: #05040A;
+    background-color: black;
     color: white;
     display: flex;
-    font-family: serif;
+    font-family: cursive;
     justify-content: space-between;
-    border: 2px solid black;
+    border-left: 2px solid black;
 }
 
 #Detetive02 img {
-    
-    border: solid 2px black;
-    width: 30em;
+    border-left: solid 2px #750303;
+    width: 40em;
+    opacity: 0.5;
 }
 
 #Detetive02 div {
-    width: 30%;
-    font-size: 1.2em;
-    color: #540000;
-    margin-left: 10em;
+    font-size: 1.4em;
+    color: #750303;
     padding: 10px;
+    width: 40%;
+    margin: 0 auto;
 }
+
 

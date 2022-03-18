@@ -14,17 +14,15 @@ header {
     justify-content: space-between;
     align-items: center;
     background: black;
-    margin: 0;
-    border-bottom: solid 2px #50050A;
+    padding: 0.5em;
 }
 
-header #logoTheBatman img {
-    margin: 0.8em;
+header img {
+    padding: 0.6em;
 }
 
 header nav a {
-    color: #B40516;
-    color: #D1051A;
+    color: #880202;
     font-size: 1.8em;
     text-decoration: none;
     margin: 2em;
@@ -55,26 +53,34 @@ section {
 }
 
 footer {
-    background-color: black;
-}
-
-
-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: #B62220;
+    background: linear-gradient(to right, #480F0E, #480f0efa);
+    padding: 0.6em;
 }
 
-footer img {
-    margin-left: 10px;
-    margin-left: 0.5em;
+footer a {
+    height: 3em;
+    width: 3em;
+    margin: 0.6em;
+    border-radius: 100%;
+    padding: 0.3em;
 }
 
-footer p:hover{
+footer a:hover {
+    height: 3.4em;
+    width: 3.4em;
+}
+
+footer p {
+    font-size: 1.6em;
+    font-family: cursive;
+}
+
+footer p:hover {
     cursor: default;
 }
+
+
 

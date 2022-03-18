@@ -23,10 +23,14 @@ const inicializarSectionEMusica = _ => {
             .then(html => section.innerHTML = html)
 
         // Inicializa Musica
-        musica.autoplay = true /* Habilita opção de play recarrega-a em seguida */ 
-        musica.load()
+        /* musica.play() */
     }
 }
 
+
 inicializarSectionEMusica()
 trocarPagina()
+
+
+
+

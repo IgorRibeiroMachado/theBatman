@@ -1,0 +1,54 @@
+#theRiddler {
+    background: linear-gradient(to right bottom, rgb(1, 43, 1), #6F6630);
+    display: flex;
+}
+
+#theRiddler img {
+    width: 26.9em;
+}
+
+#charadas {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+
+#charadas h1 {
+    align-self: center;
+    font-size: 3em;
+}
+
+#charadas label, #charadas input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin: 0.4em;
+}
+
+#charadas input {
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 0.2em;
+}
+
+#charadas input:focus {
+    background-color: #2f8109;
+    outline-style: none;
+}
+
+#charadas input::placeholder {
+    color: white;
+}
+
+#resolver {
+    background-color: rgba(29, 48, 20, 0.836);
+    color: rgba(0, 0, 0, 0.671);
+    margin-top: 1.6em;
+    border-radius: 2em;
+    font-size: 1em;
+    width: 10em;
+    height: 2em;
+    align-self: center;
+}
+
+#resolver:hover {
+    cursor: pointer;
+}
