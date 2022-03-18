@@ -1,7 +1,6 @@
 const trocarPagina = _ => {
     const section = document.querySelector('section')
-    document.querySelectorAll('a').forEach(link => {
-
+    document.querySelectorAll('header a').forEach(link => {
         link.onclick = function(e) {
             e.preventDefault()
             fetch(link.href)
