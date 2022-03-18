@@ -22,8 +22,6 @@ const inicializarSection = _ => {
             .then(resp => resp.text())
             .then(html => section.innerHTML = html)
 
-        musica.load()
-        musica.play()
     }
 }
 

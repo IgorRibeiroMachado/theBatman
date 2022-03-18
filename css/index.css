@@ -82,5 +82,9 @@ footer p:hover {
     cursor: default;
 }
 
+footer embed {
+    height: 0;
+    width: 0;
+}
 
 
