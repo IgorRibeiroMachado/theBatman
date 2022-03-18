@@ -11,7 +11,7 @@ const trocarPagina = _ => {
     })
 }
 
-const inicializarSectionEMusica = _ => {
+const inicializarSection = _ => {
     window.onload = function() {
         const section = document.querySelector('section')
         const inicio = document.querySelector('#inicio')
@@ -22,14 +22,11 @@ const inicializarSectionEMusica = _ => {
             .then(resp => resp.text())
             .then(html => section.innerHTML = html)
 
-        // Inicializa Musica
-        musica.autoplay = true
-        musica.load()
     }
 }
 
 
-inicializarSectionEMusica()
+inicializarSection()
 trocarPagina()
 
 
