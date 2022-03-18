@@ -1,6 +1,5 @@
 #theBatmanBegin {
-    width: 90em;
-    height: 40em;
+    width: 100%;
 }
 
 #theBatmanBegin{
@@ -20,6 +19,6 @@
 
     to {
         margin-right: 0%;
-        width: 90em;
+        width: 100%;
     }
 }
