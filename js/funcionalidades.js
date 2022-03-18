@@ -23,7 +23,7 @@ const inicializarSectionEMusica = _ => {
             .then(html => section.innerHTML = html)
 
         // Inicializa Musica
-        /* musica.play() */
+        musica.play()
     }
 }
 
