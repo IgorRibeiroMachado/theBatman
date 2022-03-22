@@ -48,7 +48,9 @@ const tocarMusica = _ => {
 const menu = _ => {
     document.querySelector('#menu').onclick = e => {
         document.querySelectorAll('header nav a').forEach(link => {
-            link.style.display == "none" ? link.style.display = "block" : link.style.display = "none"
+            link.style.display == "none" ? 
+            link.style.display = "block" : 
+            link.style.display = "none"
         })
     }
 }
