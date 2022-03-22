@@ -22,6 +22,14 @@ header img {
     padding: 0.6em;
 }
 
+#menu {
+    display: none;
+    background-color: #e4031db0;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+}
+
 header nav a {
     color: #880202;
     font-size: 1.8em;
@@ -105,8 +113,25 @@ footer embed {
 }
 
 @media (max-width: 1084px) {
+
     header {
         flex-direction: column;
+    }
+
+    #batLogoEMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu:hover {
+        background-color: #e4031d71;
     }
 
     header nav {
@@ -118,7 +143,8 @@ footer embed {
 
     header nav a {
         margin: 0;
-        font-size: 4em;
+        font-size: 3em;
+        display: none;
     }
 
     header #botaoMusica {
