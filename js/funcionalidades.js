@@ -1,11 +1,13 @@
 const trocarPagina = _ => {
     const section = document.querySelector('section')
+
     document.querySelectorAll('header a').forEach(link => {
         link.onclick = function(e) {
             e.preventDefault()
             fetch(link.href)
-                .then(resp => resp.text())
-                .then(html => section.innerHTML = html)
+            .then(resp => resp.text())
+            .then(html => section.innerHTML = html)
+            
         }
     })
 }

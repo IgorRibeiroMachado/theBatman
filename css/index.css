@@ -68,7 +68,11 @@ footer {
     padding: 0.6em;
 }
 
-footer a {
+#contatos {
+    display: flex;
+}
+
+#contatos a {
     height: 3em;
     width: 3em;
     margin: 0.6em;
@@ -76,7 +80,7 @@ footer a {
     padding: 0.3em;
 }
 
-footer a:hover {
+#contatos a:hover {
     height: 3.4em;
     width: 3.4em;
 }
@@ -88,11 +92,6 @@ footer p {
 
 footer p:hover {
     cursor: default;
-}
-
-footer embed {
-    height: 0;
-    width: 0;
 }
 
 #botaoMusica {
@@ -150,4 +149,8 @@ footer embed {
         display: none;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
