@@ -102,3 +102,25 @@ footer embed {
     height: 2.1m;
     width: 2.1em;
 }
+
+@media (max-width: 1084px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav a {
+        margin: 0;
+    }
+
+    header #botaoMusica {
+        display: none;
+    }
+
+}
