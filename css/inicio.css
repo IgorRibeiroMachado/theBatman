@@ -1,40 +1,24 @@
 #theBatmanBegin {
     width: 100%;
-}
-
-#theBatmanBegin{
+    height: 36em;
     opacity: 0.6;
 }
 
-#theBatmanBegin {
-    animation-duration: 10s;
-    animation-name: batman;
-}
-
-@keyframes batman {
-    from {
-        margin-right: 100%;
-        width: 150em;
-    }
-
-    to {
-        margin-right: 0%;
-        width: 100%;
-    }
-}
-
-@media (max-width: 1084px) { 
+@media (min-width: 1085px) {
+    
     #theBatmanBegin {
-        width: 100%;
-        height: 36em;
-    }   
+        animation-duration: 10s;
+        animation-name: batman;
+    }
 
     @keyframes batman {
         from {
+            margin-right: 100%;
             width: 150em;
         }
     
         to {
+            margin-right: 0%;
             width: 100%;
         }
     }
