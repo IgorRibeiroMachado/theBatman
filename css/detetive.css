@@ -64,6 +64,7 @@
     #Detetive01 div {
         width: 80%;
         font-size: 2em;
+        font-family: cursive;
     }
 
     #Detetive02 {
@@ -88,5 +89,6 @@
     #Detetive02 div {
         width: 80%;
         font-size: 2em;
+        font-family: cursive;
     }
 }
