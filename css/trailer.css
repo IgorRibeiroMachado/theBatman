@@ -32,12 +32,12 @@
 
 @media (max-width: 1084px) {
     #trailers iframe {
-        width: 24em;
-        height: 28em;
+        width: 22em;
+        height: 22em;
     }
 
     #trailer01, #trailer02, #trailer03 {
         padding-top: 0;
-        margin: 0;
+        margin: 0.4em;
     }
 }

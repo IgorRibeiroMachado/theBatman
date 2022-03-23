@@ -64,8 +64,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(to right, #410000, #540000); */
-    /* background-color: #540000; */
     border-top: solid 2px #540000;
     background-color: black;
     color: #540000;

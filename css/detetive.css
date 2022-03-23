@@ -1,8 +1,11 @@
+* {
+    font-family: serif;
+}
+
 #Detetive01 {
     background-color: #540000;
     color: white;
     display: flex;
-    font-family: cursive;
 }
 
 #Detetive01 img {
@@ -22,7 +25,6 @@
     background-color: black;
     color: white;
     display: flex;
-    font-family: cursive;
     justify-content: space-between;
     border-left: 2px solid black;
 }
@@ -64,7 +66,6 @@
     #Detetive01 div {
         width: 80%;
         font-size: 2em;
-        font-family: cursive;
     }
 
     #Detetive02 {
@@ -89,6 +90,5 @@
     #Detetive02 div {
         width: 80%;
         font-size: 2em;
-        font-family: cursive;
     }
 }
