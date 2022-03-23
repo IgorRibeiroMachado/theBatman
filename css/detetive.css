@@ -63,6 +63,7 @@
 
     #Detetive01 div {
         width: 80%;
+        font-size: 2em;
     }
 
     #Detetive02 {
@@ -86,5 +87,6 @@
 
     #Detetive02 div {
         width: 80%;
+        font-size: 2em;
     }
 }
