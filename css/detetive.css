@@ -35,10 +35,56 @@
 
 #Detetive02 div {
     font-size: 1.4em;
-    color: #750303;
+    color: #5f0808c9;
     padding: 10px;
     width: 40%;
     margin: 0 auto;
 }
 
+@media (max-width: 1084px) {
+    #Detetive01 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #Detetive01 img {
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px solid black;
+        border-top: 1px solid #540000;
+        border-right: none;
+    }
 
+    #Detetive01 h1 {
+        border-bottom: 2px solid black;
+        border-radius: 20%;
+        text-align: center;
+    }
+
+    #Detetive01 div {
+        width: 80%;
+    }
+
+    #Detetive02 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #Detetive02 img {
+        width: 100%;
+        height: 40em;
+        border-bottom: 2px solid #540000;
+        border-top: 10px solid black;
+        border-left: none;
+    }
+
+    #Detetive02 h1 {
+        border-bottom: 2px solid rgba(255, 0, 0, 0.507);
+        border-radius: 20%;
+        text-align: center;
+    }
+
+    #Detetive02 div {
+        width: 80%;
+    }
+}

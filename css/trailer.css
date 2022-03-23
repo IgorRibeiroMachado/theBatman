@@ -5,51 +5,39 @@
     border-top: solid 1px #480F0E;
 }
 
-#trailer01 p {
+#trailers iframe {
+    width: 50em;
+    height: 30em;
+    border: solid 2px #480F0E;
+    border-radius: 8%;
+}
+
+#trailers p {
     color: #750303;
     font-size: 2em;
     border-bottom: 0.1em solid #750303;
     border-radius: 10%;
 }
 
-#trailer01 iframe {
-    width: 50em;
-    height: 30em;
-    border: none;
-}
-
-#trailer02 p {
-    color: #750303;
-    font-size: 2em;
-    border-bottom: 0.1em solid #750303;
-    border-radius: 10%;
-}
-
-#trailer02 iframe {
-    width: 50em;
-    height: 30em;
-    border: none;
-}
-
-#trailer03 p {
-    color: #750303;
-    font-size: 2em;
-    border-bottom: 0.1em solid #750303;
-    border-radius: 10%;
-}
-
-#trailer03 iframe {
-    width: 50em;
-    height: 30em;
-    border: none;
-}
 
 #trailer01, #trailer02, #trailer03 {
-    border: solid 1px #480F0E;
     padding: 2em;
     border-radius: 10px;
     margin-top: 2em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 1084px) {
+    #trailers iframe {
+        width: 28em;
+        height: 28em;
+    }
+
+    #trailer01, #trailer02, #trailer03 {
+        padding-top: 0;
+        margin: 0;
+    }
 }

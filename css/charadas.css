@@ -1,10 +1,17 @@
 #theRiddler {
-    background: linear-gradient(to right bottom, rgb(1, 43, 1), #6F6630);
+    /* background: linear-gradient(to right bottom, rgb(1, 43, 1), #6F6630);| */
+    border-top: solid 1px #480F0E;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: #514A1C;
 }
 
 #theRiddler img {
-    width: 26.9em;
+    width: 80%;
+    margin-top: 4em;
+    border: 1px solid #514A1C;
 }
 
 #charadas {
@@ -24,8 +31,12 @@
     margin: 0.4em;
 }
 
+#charadas label {
+    margin-top: 2em;
+}
+
 #charadas input {
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: #514A1C;
     border-radius: 0.2em;
 }
 
@@ -34,21 +45,29 @@
     outline-style: none;
 }
 
-#charadas input::placeholder {
-    color: white;
-}
-
 #resolver {
-    background-color: rgba(29, 48, 20, 0.836);
+    background-color: #514A1C;
     color: rgba(0, 0, 0, 0.671);
-    margin-top: 1.6em;
-    border-radius: 2em;
-    font-size: 1em;
-    width: 10em;
+    padding: 1.2em;
+    margin-top: 2em;
+    border-radius: 0.4em;
+    font-size: 2em;
+    font-family: batman;
+    width: 6em;
     height: 2em;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #resolver:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1084px) {
+    #theRiddler img {
+        width: 30em;
+        height: 20em;
+    }
 }

@@ -30,7 +30,7 @@ header img {
 }
 
 header nav a {
-    color: #880202;
+    color: #540000;
     font-size: 1.8em;
     text-decoration: none;
     margin: 2em;
@@ -64,7 +64,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #480F0E, #480f0efa);
+    /* background: linear-gradient(to right, #410000, #540000); */
+    /* background-color: #540000; */
+    border-top: solid 2px #540000;
+    background-color: black;
+    color: #540000;
     padding: 0.6em;
 }
 
@@ -77,7 +81,9 @@ footer {
     width: 3em;
     margin: 0.6em;
     border-radius: 100%;
+    border-radius: 20%;
     padding: 0.3em;
+    background-color: #540000;
 }
 
 #contatos a:hover {
@@ -110,7 +116,7 @@ footer p:hover {
     width: 2.1em;
 }
 
-@media (max-width: 1084px) {
+@media (max-width: 1084px) { /* aplica em telas menores */
 
     header {
         flex-direction: column;
@@ -126,6 +132,7 @@ footer p:hover {
     #menu {
         display: block;
         cursor: pointer;
+        background-color: #e4031d4b;
     }
 
     #menu:hover {
@@ -149,8 +156,7 @@ footer p:hover {
         display: none;
     }
 
-    footer {
-        display: flex;
-        flex-direction: column;
+    footer p {
+        display: none;
     }
 }
