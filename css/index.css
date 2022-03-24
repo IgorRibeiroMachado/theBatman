@@ -15,6 +15,7 @@ header {
     background: black;
     padding: 0.5em;
     justify-content: space-between;
+    height: 14vh;
 }
 
 header img {
@@ -24,6 +25,8 @@ header img {
 #menu {
     display: none;
     background-color: #e4031db0;
+    height: 40vh;
+    width: 40vw;
     height: 40px;
     width: 40px;
     border-radius: 20%;
@@ -68,6 +71,7 @@ footer {
     background-color: black;
     color: #540000;
     padding: 0.6em;
+    height: 14vh;
 }
 
 #contatos {
@@ -99,8 +103,8 @@ footer p:hover {
 }
 
 #botaoMusica {
-    height: 2em;
-    width: 2em;
+    height: 4vh;
+    width: 3vw;
     cursor: pointer;
     margin-right: 2em;
 }
@@ -110,8 +114,8 @@ footer p:hover {
 }
 
 #botaoMusica:active {
-    height: 2.1m;
-    width: 2.1em;
+    height: 2vh;
+    width: 2vw;
 }
 
 @media (max-width: 1084px) { /* aplica em telas menores */
@@ -124,7 +128,7 @@ footer p:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 94vw;
     }
 
     #menu {
@@ -141,13 +145,16 @@ footer p:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        z-index: 1;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.726);
     }
 
     header nav a {
         margin: 0;
         font-size: 3em;
         display: none;
+        z-index: 1;
     }
 
     header #botaoMusica {

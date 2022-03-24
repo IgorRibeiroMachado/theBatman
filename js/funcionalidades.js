@@ -7,9 +7,27 @@ const trocarPagina = _ => {
             fetch(link.href)
             .then(resp => resp.text())
             .then(html => section.innerHTML = html)
-            
+         
+            if (window.innerWidth < 1085){
+                document.querySelectorAll('header nav a').forEach(link => {
+                    link.style.display == "none" ? 
+                    link.style.display = "block" : 
+                    link.style.display = "none"
+                })
+            }
         }
     })
+}
+
+const corrigindoBugMenu = _ => {
+    window.onresize = function(e) {
+    console.log('oi')
+        if (document.innerWidth > 1084) {
+            document.querySelectorAll('header nav a').forEach(link => {
+                link.style.display = "block"             
+            })
+        }
+    }
 }
 
 const inicializarSection = _ => {
@@ -60,6 +78,7 @@ const menu = _ => {
 inicializarSection()
 tocarMusica()
 trocarPagina()
+corrigindoBugMenu()
 menu()
 
 

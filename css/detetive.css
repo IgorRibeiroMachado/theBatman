@@ -1,4 +1,4 @@
-* {
+#Detetive01, #Detetive02 {
     font-family: serif;
 }
 
@@ -9,12 +9,13 @@
 }
 
 #Detetive01 img {
-    width: 21em;
+    width: 30vw;
+    height: 80vh;
     border-right: solid 2px black;
 }
 
 #Detetive01 div {
-    width: 55%;
+    width: 50vw;
     font-size: 1.2em;
     color: black;
     padding: 10px;
@@ -31,7 +32,8 @@
 
 #Detetive02 img {
     border-left: solid 2px #750303;
-    width: 40em;
+    width: 40vw;
+    height: 80vh;
     opacity: 0.5;
 }
 
@@ -39,7 +41,7 @@
     font-size: 1.4em;
     color: #5f0808c9;
     padding: 10px;
-    width: 40%;
+    width: 40vw;
     margin: 0 auto;
 }
 
@@ -47,11 +49,12 @@
     #Detetive01 {
         display: flex;
         flex-direction: column;
+        background-color: #4d0101;
     }
     
     #Detetive01 img {
-        width: 100%;
-        height: 50%;
+        width: 100vw;
+        height: 100vh;
         border-bottom: 1px solid black;
         border-top: 1px solid #540000;
         border-right: none;
@@ -60,11 +63,13 @@
     #Detetive01 h1 {
         border-bottom: 2px solid black;
         border-radius: 20%;
+        font-family: batman;
+        font-size: 2.4em;
         text-align: center;
     }
 
     #Detetive01 div {
-        width: 80%;
+        width: 80vw;
         font-size: 2em;
     }
 
@@ -74,21 +79,23 @@
     }
 
     #Detetive02 img {
-        width: 100%;
-        height: 40em;
+        width: 100vw;
+        height: 100vh;
         border-bottom: 2px solid #540000;
         border-top: 10px solid black;
         border-left: none;
     }
 
     #Detetive02 h1 {
-        border-bottom: 2px solid rgba(255, 0, 0, 0.507);
+        border-bottom: 2px solid #5f0808c9;
         border-radius: 20%;
         text-align: center;
+        font-family: batman;
+        font-size: 2.2em;
     }
 
     #Detetive02 div {
-        width: 80%;
+        width: 80vw;
         font-size: 2em;
     }
 }
