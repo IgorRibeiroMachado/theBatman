@@ -8,7 +8,10 @@ const trocarPagina = _ => {
             .then(resp => resp.text())
             .then(html => section.innerHTML = html)
          
-            if (window.innerWidth < 1085){
+            /* Diminui o menu após trocar de página, e impede que o menu 
+            seja aberto ao clicar na logo do menu */
+            const botaoLogo = document.querySelector('#inicio')
+            if (window.innerWidth < 1085 && botaoLogo != link ){
                 document.querySelectorAll('header nav a').forEach(link => {
                     link.style.display == "none" ? 
                     link.style.display = "block" : 
@@ -21,7 +24,6 @@ const trocarPagina = _ => {
 
 const corrigindoBugMenu = _ => {
     window.onresize = function(e) {
-    console.log('oi')
         if (document.innerWidth > 1084) {
             document.querySelectorAll('header nav a').forEach(link => {
                 link.style.display = "block"             
@@ -46,12 +48,14 @@ const tocarMusica = _ => {
     const musica = document.querySelector('audio')
     const botaoMusica = document.querySelector('#botaoMusica')
     
-    botaoMusica.onclick = e => {
-    
-        botaoPlay = "image/playButton.ico"
-        botaoPause = "image/pauseButton.ico"
+    addEventListener("click",(e) => {
+        e.preventDefault()
+        botaoPlay = "image/playButton.svg"
+        botaoPause = "image/pauseButton.svg"
 
         botaoMusica.src = botaoPlay
+
+        console.log(botaoMusica)
 
         if (botaoMusica.getAttribute('play') == 'true') {
             botaoMusica.src = botaoPause
@@ -62,9 +66,9 @@ const tocarMusica = _ => {
             botaoMusica.setAttribute('play', 'true')
             musica.pause()
         }
-    }
+    })
 }
-
+    
 const menu = _ => {
     document.querySelector('#menu').onclick = e => {
         document.querySelectorAll('header nav a').forEach(link => {
@@ -76,10 +80,10 @@ const menu = _ => {
 }
 
 inicializarSection()
-tocarMusica()
 trocarPagina()
 corrigindoBugMenu()
 menu()
+tocarMusica()
 
 
 
