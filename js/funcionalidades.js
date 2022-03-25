@@ -48,14 +48,13 @@ const tocarMusica = _ => {
     const musica = document.querySelector('audio')
     const botaoMusica = document.querySelector('#botaoMusica')
     
-    addEventListener("click",(e) => {
+    /* botaoMusica.addEventListener("click",(e) => {
         e.preventDefault()
+
         botaoPlay = "image/playButton.svg"
         botaoPause = "image/pauseButton.svg"
 
         botaoMusica.src = botaoPlay
-
-        console.log(botaoMusica)
 
         if (botaoMusica.getAttribute('play') == 'true') {
             botaoMusica.src = botaoPause
@@ -66,25 +65,45 @@ const tocarMusica = _ => {
             botaoMusica.setAttribute('play', 'true')
             musica.pause()
         }
+    }) */
+
+    botaoMusica.addEventListener("click",(e) => {
+        e.preventDefault()
+        botaoPlay = "image/playButton.svg"
+        botaoPause = "image/pauseButton.svg"
+
+        const imgBotao = document.querySelector('#imgBotao')
+
+        imgBotao.src = botaoPlay
+
+        if (botaoMusica.getAttribute('play') == 'true') {
+            imgBotao.src = botaoPause
+            botaoMusica.setAttribute('play', 'false')
+            musica.play()
+        } else {
+            imgBotao.src = botaoPlay
+            botaoMusica.setAttribute('play', 'true')
+            musica.pause()
+        }
     })
 }
     
 const menu = _ => {
-    document.querySelector('#menu').onclick = e => {
+    document.querySelector('#menu').addEventListener("click", e => {
         document.querySelectorAll('header nav a').forEach(link => {
             link.style.display == "none" ? 
             link.style.display = "block" : 
             link.style.display = "none"
         })
-    }
+    }) 
 }
+
 
 inicializarSection()
 trocarPagina()
 corrigindoBugMenu()
 menu()
 tocarMusica()
-
 
 
 
