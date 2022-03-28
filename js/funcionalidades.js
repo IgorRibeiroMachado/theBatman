@@ -91,15 +91,27 @@ const meuAlert = (resposta) => {
         alert_confirmation.addEventListener("click", e => {
             alert.style.display = 'none'
             window.open("https://www.rataalada.com")
+            // Destrava rolagem
+            window.onscroll = function() {};
         })
     } else {
-        texto.innerText = 'Você errou, sua puta'
+        texto.innerText = 'Você errou, tente novamente!'
         alert_confirmation.addEventListener("click", e => {
             alert.style.display = 'none'
+            window.onscroll = function() {};
         })
     }
 
+    // Voltar página ao topo
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
 
+    // Trava rolagem
+    if (alert.style.display == 'flex') {
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        }
+    }
 }
 
 flag = 0
@@ -109,6 +121,7 @@ const resolverCharada = flag => {
         if (flag != 1) {
             if (document.getElementById('resolver') != null) {
                 flag = 1
+
                 document.getElementById('resolver').addEventListener('click', e => {
                     const charada01 = document.getElementById('charada01').value.toLowerCase()
                     const charada02 = document.getElementById('charada02').value.toLowerCase()
@@ -118,7 +131,7 @@ const resolverCharada = flag => {
                         charada02 == 'rua' &&
                         charada03 == 'leis'
                         ) {
-                            meuAlert('acertou')
+                        meuAlert('acertou')
                     } else {
                         meuAlert('errou')
                     }
