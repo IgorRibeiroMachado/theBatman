@@ -1,8 +1,8 @@
 const trocarPagina = _ => {
     const section = document.querySelector('section')
-
+    
     document.querySelectorAll('header a').forEach(link => {
-        link.onclick = function(e) {
+        link.addEventListener("click", e => {
             e.preventDefault()
             fetch(link.href)
             .then(resp => resp.text())
@@ -18,22 +18,25 @@ const trocarPagina = _ => {
                     link.style.display = "none"
                 })
             }
-        }
+
+        })
     })
 }
 
+/* Se a pessoa clicar no menu e tentar voltar a tela maior, não funciona :/ */
 const corrigindoBugMenu = _ => {
-    window.onresize = function(e) {
-        if (document.innerWidth > 1084) {
+    window.addEventListener("resize", function(e) {
+        if (document.innerWidth >= 1084) {
+            const nav = document.getElementsByName('header nav')
             document.querySelectorAll('header nav a').forEach(link => {
                 link.style.display = "block"             
             })
         }
-    }
+    })
 }
 
 const inicializarSection = _ => {
-    window.onload = function() {
+    window.addEventListener("load", e => {
         const section = document.querySelector('section')
         const inicio = document.querySelector('#inicio')
         
@@ -41,14 +44,14 @@ const inicializarSection = _ => {
         fetch(inicio.href)
             .then(resp => resp.text())
             .then(html => section.innerHTML = html)
-    }
+    })
 }
 
 const tocarMusica = _ => {
-    const musica = document.querySelector('audio')
-    const botaoMusica = document.querySelector('#botaoMusica')
+    const musica = document.getElementById('something_in_the_way')
+    const botaoMusica = document.getElementById('botaoMusica')
     
-    /* botaoMusica.addEventListener("click",(e) => {
+    botaoMusica.addEventListener("click",(e) => {
         e.preventDefault()
 
         botaoPlay = "image/playButton.svg"
@@ -65,45 +68,71 @@ const tocarMusica = _ => {
             botaoMusica.setAttribute('play', 'true')
             musica.pause()
         }
-    }) */
-
-    botaoMusica.addEventListener("click",(e) => {
-        e.preventDefault()
-        botaoPlay = "image/playButton.svg"
-        botaoPause = "image/pauseButton.svg"
-
-        const imgBotao = document.querySelector('#imgBotao')
-
-        imgBotao.src = botaoPlay
-
-        if (botaoMusica.getAttribute('play') == 'true') {
-            imgBotao.src = botaoPause
-            botaoMusica.setAttribute('play', 'false')
-            musica.play()
-        } else {
-            imgBotao.src = botaoPlay
-            botaoMusica.setAttribute('play', 'true')
-            musica.pause()
-        }
     })
 }
     
 const menu = _ => {
     document.querySelector('#menu').addEventListener("click", e => {
         document.querySelectorAll('header nav a').forEach(link => {
-            link.style.display == "none" ? 
-            link.style.display = "block" : 
-            link.style.display = "none"
+            link.style.display == "none" ? link.style.display = "block" : link.style.display = "none"
         })
     }) 
 }
 
+const meuAlert = (resposta) => {
+    const alert_confirmation = document.querySelector('#alert input')
+    const alert = document.querySelector('#alertContainer')
+    const texto = document.querySelector('#alertText')
+    
+    alert.style.display = 'flex'
 
+    if (resposta == 'acertou') {
+        texto.innerText = 'Sou o charada, clique em OK para ver o rataalada.com'
+        alert_confirmation.addEventListener("click", e => {
+            alert.style.display = 'none'
+            window.open("https://www.rataalada.com")
+        })
+    } else {
+        texto.innerText = 'Você errou, sua puta'
+        alert_confirmation.addEventListener("click", e => {
+            alert.style.display = 'none'
+        })
+    }
+
+
+}
+
+flag = 0
+
+const resolverCharada = flag => {
+    document.addEventListener('scroll', e => {
+        if (flag != 1) {
+            if (document.getElementById('resolver') != null) {
+                flag = 1
+                document.getElementById('resolver').addEventListener('click', e => {
+                    const charada01 = document.getElementById('charada01').value.toLowerCase()
+                    const charada02 = document.getElementById('charada02').value.toLowerCase()
+                    const charada03 = document.getElementById('charada03').value.toLowerCase()
+
+                    if (charada01 == 'batman' &&
+                        charada02 == 'rua' &&
+                        charada03 == 'leis'
+                        ) {
+                            meuAlert('acertou')
+                    } else {
+                        meuAlert('errou')
+                    }
+                })
+            }
+        }
+    })
+}
+
+resolverCharada()
 inicializarSection()
 trocarPagina()
-corrigindoBugMenu()
 menu()
+corrigindoBugMenu()
 tocarMusica()
-
 
 

@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div id="alertContainer">
+        <div id="alert">
+            <p id="alertText"></p>
+            <input type="button" value="OK">
+        </div>
+    </div>
     <header>
         <div id="batLogoEMenu">
             <a id='inicio' href="section/inicio.html" id="logoTheBatman">
@@ -21,11 +27,8 @@
             <a href="section/charadas.html">CHARADAS</a>
             <a href="section/trailer.html">TRAILER</a>
         </nav>
-        <button id="botaoMusica" play="true">
-            <img id="imgBotao" src="image/playButton.svg">
-            <!-- <img id="botaoMusica" src="image/playButton.svg" play="true"> -->
-        </button>
-        <audio src="./music/something_in_the_way.mp3"></audio>
+        <img id="botaoMusica" src="image/playButton.svg" play="true">
+        <audio id="something_in_the_way" src="./music/something_in_the_way.mp3"></audio>
     </header>
     <section></section>
     <footer>

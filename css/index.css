@@ -98,6 +98,12 @@ footer p:hover {
     cursor: default;
 }
 
+header i {
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+}
+
 header #botaoMusica {
     cursor: pointer;
     border-style: none;
@@ -106,10 +112,43 @@ header #botaoMusica {
     margin-right: 2vw;
     height: 8vh;
     width: 8vh;
+    border-radius: 100%;
+    border: 2px solid #540000;
 }
 
 #botaoMusica:hover {
     opacity: 0.8;
+}
+
+#alertContainer {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.726);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: 2;
+}
+
+#alert {
+    background-color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    flex-direction: column;
+    font-family: serif;
+    color: green;
+    font-size: 1.4em;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+}
+
+#alert input {
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: rgb(1, 112, 1);
 }
 
 @media (max-width: 1084px) { /* aplica em telas menores */
@@ -160,9 +199,6 @@ header #botaoMusica {
         border-style: none;
         padding: none;
         background: none;
-    }
-
-    #botaoMusica img {
         height: 10vw;
         width: 10vw;
     }
