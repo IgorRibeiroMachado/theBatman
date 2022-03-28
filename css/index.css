@@ -16,16 +16,23 @@ header {
     padding: 0.5em;
     justify-content: space-between;
     height: 14vh;
+    min-height: 14vh;
+}
+
+#batLogo {
+    width: 12em;
+    margin-left: 2em;
 }
 
 #menu {
     display: none;
     background-color: #e4031db0;
-    height: 40vh;
-    width: 40vw;
+    height: 40%;
+    width: 40%;
     height: 40px;
     width: 40px;
     border-radius: 20%;
+    position: relative;
 }
 
 header nav a {
@@ -89,6 +96,8 @@ footer {
     width: 3.4em;
 }
 
+
+
 footer p {
     font-size: 1.6em;
     font-family: cursive;
@@ -109,9 +118,9 @@ header #botaoMusica {
     border-style: none;
     padding: none;
     background: none;
-    margin-right: 2vw;
-    height: 8vh;
-    width: 8vh;
+    margin-right: 2em;
+    height: 4em;
+    width: 4em;
     border-radius: 100%;
     border: 2px solid #540000;
 }
@@ -135,6 +144,8 @@ header #botaoMusica {
 #alert {
     background-color: rgba(0, 0, 0, 0.911);
     display: flex;
+    border-radius: 10%;
+    border: 2px green solid;
     flex-direction: column;
     font-family: serif;
     color: green;
@@ -148,8 +159,56 @@ header #botaoMusica {
 #alert input {
     margin: 10px;
     padding: 10px 30px;
-    background-color: rgb(1, 112, 1);
+    border-radius: 10%;
+    background-color: rgba(1, 112, 1, 0.918);
+    border: none;
+    border-left: 2px solid rgb(1, 71, 1);
+    border-bottom: 2px solid rgb(1, 71, 1);    
 }
+
+#alert input:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+/* #alert p:hover {
+    color: rgb(0, 255, 0);
+} */
+
+#alert input:active {
+    border: none;
+    border-right: 1px solid rgb(1, 71, 1);
+    border-top: 1px solid rgb(1, 71, 1);    
+}
+
+#alertText {
+    border-right: 2px solid green;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor steps(40) 500ms infinite normal,
+        typing steps(40) 6s 1s normal both;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: green;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 26.2em;
+    }
+}
+
 
 @media (max-width: 1084px) { /* aplica em telas menores */
 

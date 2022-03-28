@@ -9,8 +9,7 @@
 }
 
 #Detetive01 img {
-    width: 30vw;
-    height: 80vh;
+    width: 28%;
     border-right: solid 2px black;
 }
 
@@ -20,7 +19,7 @@
     align-self: center;
     height: 75vh;
     color: white;
-    width: 65vw;
+    width: 60%;
     font-size: 1.4em;
     color: black;
     padding: 10px;
@@ -37,8 +36,7 @@
 }
 
 #Detetive02 img {
-    width: 40vw;
-    height: 80vh;
+    width: 40%;
     opacity: 0.5;
 }
 
@@ -46,14 +44,12 @@
     font-size: 1.6em;
     color: black;
     padding: 10px;
-    width: 50vw;
-    height: 70vh;
+    width: 50%;
     border-radius: 2%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
-    background-color: #3f00009c;
+    background-color: #8b00008c;
     align-self: center;
-    filter: drop-shadow(0 0 3px rgba(255, 0, 0, 0.486))
 }
 
 @media (max-width: 1084px) {
@@ -64,8 +60,7 @@
     }
     
     #Detetive01 img {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
         border-bottom: 1px solid black;
         border-top: 1px solid #540000;
         border-right: none;
@@ -81,11 +76,11 @@
     }
 
     #Detetive01 div {
-        width: 80vw;
+        width: 80%;
         font-size: 2em;
         border: 2px solid black;
         background-color: #450000;
-        padding: 10px;
+        padding: 20px;
         color: black;
         align-self: none;
         font-size: 40px;
@@ -99,16 +94,16 @@
     }
 
     #Detetive02 img {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 800px;
         border-bottom: 2px solid #540000;
         border-top: 10px solid black;
         border-left: none;
     }
 
     #Detetive02 h1 {
-        border-bottom: 2px solid #5f0808c9;
-        border-radius: 20%;
+        border-bottom: 2px solid #000000c9;
+        border-radius: 10%;
         text-align: center;
         font-family: batman;
         font-size: 3em;
@@ -116,9 +111,9 @@
     }
 
     #Detetive02 div {
-        width: 80vw;
+        width: 80%;
         font-size: 40px;
-        padding: 10px;
+        padding: 20px;
         height: 100%;
         margin: 10px;
     }

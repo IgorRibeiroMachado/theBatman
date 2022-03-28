@@ -86,8 +86,17 @@ const meuAlert = (resposta) => {
     
     alert.style.display = 'flex'
 
+    alert_confirmation.addEventListener("mouseover", e => {
+        texto.style.color = "rgb(0, 255, 0)"
+    })
+
+    alert_confirmation.addEventListener("mouseout", e => {
+        texto.style.color = "green"
+    })
+
     if (resposta == 'acertou') {
-        texto.innerText = 'Sou o charada, clique em OK para ver o rataalada.com'
+        texto.innerText = 'Você é mais esperto do que imaginei. Aproveite sua recompensa!'
+
         alert_confirmation.addEventListener("click", e => {
             alert.style.display = 'none'
             window.open("https://www.rataalada.com")
@@ -95,7 +104,7 @@ const meuAlert = (resposta) => {
             window.onscroll = function() {};
         })
     } else {
-        texto.innerText = 'Você errou, tente novamente!'
+        texto.innerText = 'Talvez você não seja tão bom com charadas! Tente mais uma vez!'
         alert_confirmation.addEventListener("click", e => {
             alert.style.display = 'none'
             window.onscroll = function() {};

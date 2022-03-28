@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: rgba(25, 25, 25);
+        }
+
+        .line {
+            border-right: 2px solid rgba(255, 255, 255, .75);
+            color: rgba(255, 255, 255, .75);
+            font-family: 'Special Elite', monospace;
+            font-size: 3em;
+            margin: 0 auto;
+            color: green;
+            white-space: nowrap; /* n quebra linha, espaço */
+            overflow: hidden;
+        }
+
+        .typing-animation {
+            animation: blinkCursor steps(40) 500ms infinite normal,
+            typing steps(40) 4s 1s normal both;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 16em;
+            }
+        }
+
+        @keyframes blinkCursor {
+            from {
+                border-right-color: rgba(255, 255, 255, .75);
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+
+    </style>
+    
+    <p class="line typing-animation">Olá, eu sou Willian Justen! => </p>
+
+</body>
+</html>

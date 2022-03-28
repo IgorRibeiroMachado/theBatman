@@ -6,8 +6,8 @@
 }
 
 #trailers iframe {
-    width: 50vw;
-    height: 60vh;
+    width: 300%;
+    height: 500px;
     border: solid 2px #480F0E;
     border-radius: 8%;
 }
@@ -32,8 +32,8 @@
 
 @media (max-width: 1084px) {
     #trailers iframe {
-        width: 80vw;
-        height: 60vh;
+        width: 120%;
+        height: 400px;
     }
 
     #trailer01, #trailer02, #trailer03 {
