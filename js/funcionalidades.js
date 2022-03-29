@@ -18,7 +18,6 @@ const trocarPagina = _ => {
                     link.style.display = "none"
                 })
             }
-
         })
     })
 }
@@ -29,7 +28,7 @@ const corrigindoBugMenu = _ => {
         if (document.innerWidth >= 1084) {
             const nav = document.getElementsByName('header nav')
             document.querySelectorAll('header nav a').forEach(link => {
-                link.style.display = "block"             
+                link.style.display = "block"
             })
         }
     })
@@ -95,7 +94,7 @@ const meuAlert = (resposta) => {
     })
 
     if (resposta == 'acertou') {
-        texto.innerText = 'Você é mais esperto do que imaginei. Aproveite sua recompensa!'
+        texto.innerText = 'Você é mais esperto do que imaginei, boa!!'
 
         alert_confirmation.addEventListener("click", e => {
             alert.style.display = 'none'
@@ -104,7 +103,7 @@ const meuAlert = (resposta) => {
             window.onscroll = function() {};
         })
     } else {
-        texto.innerText = 'Talvez você não seja tão bom com charadas! Tente mais uma vez!'
+        texto.innerText = 'Talvez você não seja tão bom com charadas!'
         alert_confirmation.addEventListener("click", e => {
             alert.style.display = 'none'
             window.onscroll = function() {};

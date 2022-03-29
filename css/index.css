@@ -36,7 +36,7 @@ header {
 }
 
 header nav a {
-    color: #540000;
+    color: #eb0120d8;
     font-size: 1.8em;
     text-decoration: none;
     margin: 2em;
@@ -170,10 +170,6 @@ header #botaoMusica {
     background-color: rgb(0, 255, 0);
 }
 
-/* #alert p:hover {
-    color: rgb(0, 255, 0);
-} */
-
 #alert input:active {
     border: none;
     border-right: 1px solid rgb(1, 71, 1);
@@ -184,11 +180,12 @@ header #botaoMusica {
     border-right: 2px solid green;
     white-space: nowrap;
     overflow: hidden;
+    /* font-size: calc(0,1em + 20vw); */
 }
 
 .typing-animation {
     animation: blinkCursor steps(40) 500ms infinite normal,
-        typing steps(40) 6s 1s normal both;
+        typing steps(40) 4s 1s normal both;
 }
 
 @keyframes blinkCursor {
@@ -205,7 +202,7 @@ header #botaoMusica {
         width: 0;
     }
     to {
-        width: 26.2em;
+        width: 18em;
     }
 }
 
@@ -264,5 +261,10 @@ header #botaoMusica {
 
     footer p {
         display: none;
+    }
+
+    #alert {
+        height: 40vh;
+        width: 84vw;
     }
 }
